@@ -13,7 +13,7 @@ class Solution(object):
            if sum == target:
                 return [p1 +1, p2+1]
            elif sum > target:
-                p2 += -1
+                p2 -= 1
            elif sum < target:
                 p1 += 1
         return False
