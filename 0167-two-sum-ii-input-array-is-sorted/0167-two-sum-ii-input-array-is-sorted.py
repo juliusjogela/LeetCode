@@ -5,8 +5,8 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        p1 = 0
-        p2 = len(numbers) - 1
+        
+        p1, p2 = 0, len(numbers) - 1
 
         while p1 <= p2:
            sum = numbers[p1] + numbers[p2]
