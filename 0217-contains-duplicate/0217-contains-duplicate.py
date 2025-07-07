@@ -4,10 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        seen = []
+        seen =set()
         for num in nums:
             if num  in seen:
                 return True
             else:
-                seen.append(num)
+                seen.add(num)
         return False
