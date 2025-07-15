@@ -4,28 +4,14 @@ class Solution(object):
         :type temperatures: List[int]
         :rtype: List[int]
         """
-        T = temperatures
-        n = len(T)
-
-        # To store the answer
+        n = len(temperatures)
         daysOfWait = [0] * n
         s = []
-
-        # Traverse all the temperatures
         for i in range(n):
-
-            # Check if current index is the
-            # next warmer temperature of
-            # any previous indexes
             while(len(s) != 0 and
-                T[s[-1]] < T[i]):
+                temperatures[s[-1]] < temperatures[i]):
                 daysOfWait[s[-1]] = i - s[-1]
-
-                # Pop the element
                 s.pop(-1)
-
-            # Push the current index
             s.append(i)
-
         return daysOfWait
 
