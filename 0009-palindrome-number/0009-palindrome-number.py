@@ -4,12 +4,9 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        num = str(x)
-        reversed = num[::-1]
-        if num == reversed:
+        forward = str(x)
+        reverse = forward[::-1]  
+        if forward == reverse:
             return True
         else:
             return False
-
-
-        
