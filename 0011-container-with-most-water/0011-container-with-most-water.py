@@ -4,9 +4,8 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        n = len(height)
         left = 0
-        right = n -1
+        right = len(height) -1
         res = 0
         while left < right:
             water = min(height[left], height[right]) * (right-left)
