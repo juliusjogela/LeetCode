@@ -5,9 +5,15 @@ class Solution(object):
         :rtype: int
         """
         n = len(height)
+        left = 0
+        right = n -1
         res = 0
-        for i in range(n):
-            for j in range(n):
-                size = min(height[i], height[j]) * (j-i)
-                res = max(size, res)
+        while left < right:
+            water = min(height[left], height[right]) * (right-left)
+            res = max(res, water)
+            if(height[left] < height[right]):
+                left += 1
+            else:
+                right -= 1
         return res
+            
