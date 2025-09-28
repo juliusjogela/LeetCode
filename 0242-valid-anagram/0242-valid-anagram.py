@@ -7,12 +7,9 @@ class Solution(object):
         """
         seen = {}
         for char in s:
-            freq = seen.get(char, 0)
-            seen[char] = freq+1
+            seen[char] = seen.get(char, 0) + 1
         for char in t:
-            freq = seen.get(char, 0)
-            seen[char] = freq-1
-        
+            seen[char] = seen.get(char, 0) -1
         for val in seen.values():
             if val != 0:
                 return False
