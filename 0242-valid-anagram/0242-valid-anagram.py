@@ -5,16 +5,15 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        freq = {}
+        seen = {}
         for char in s:
-            freq[char] = freq.get(char, 0) + 1
-        
+            freq = seen.get(char, 0)
+            seen[char] = freq+1
         for char in t:
-            freq[char] = freq.get(char, 0) - 1
-
-        for val in freq.values():
+            freq = seen.get(char, 0)
+            seen[char] = freq-1
+        
+        for val in seen.values():
             if val != 0:
                 return False
         return True
-
-        
