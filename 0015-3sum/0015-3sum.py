@@ -7,24 +7,37 @@ class Solution(object):
         nums.sort()
         res = []
         
-        for i in range(len(nums)):
+        for i in range(len(nums) - 2):
+            # Skip duplicate values for first number
             if i > 0 and nums[i] == nums[i - 1]:
-                continue  # skip duplicates for the first element
+                continue
             
-            l, r = i + 1, len(nums) - 1
-            while l < r:
-                s = nums[i] + nums[l] + nums[r]
-                if s < 0:
-                    l += 1
-                elif s > 0:
-                    r -= 1
+            leftIndex = i + 1
+            rightIndex = len(nums) - 1
+            
+            while leftIndex < rightIndex:
+                total = nums[i] + nums[leftIndex] + nums[rightIndex]
+                
+                if total == 0:
+                    res.append([nums[i], nums[leftIndex], nums[rightIndex]])
+                    
+                    # Skip duplicates for left pointer
+                    while leftIndex < rightIndex and nums[leftIndex] == nums[leftIndex + 1]:
+                        leftIndex += 1
+                    
+                    # Skip duplicates for right pointer
+                    while leftIndex < rightIndex and nums[rightIndex] == nums[rightIndex - 1]:
+                        rightIndex -= 1
+                    
+                    # Move both pointers
+                    leftIndex += 1
+                    rightIndex -= 1
+                    
+                elif total < 0:
+                    leftIndex += 1
                 else:
-                    res.append([nums[i], nums[l], nums[r]])
-                    l += 1
-                    r -= 1
-                    # skip duplicates for the second and third elements
-                    while l < r and nums[l] == nums[l - 1]:
-                        l += 1
-                    while l < r and nums[r] == nums[r + 1]:
-                        r -= 1
+                    rightIndex -= 1
+        
         return res
+                
+
