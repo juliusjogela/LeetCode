@@ -6,6 +6,9 @@ class Solution(object):
         """
         substring = ""
         maxi = 0
+        if len(s) == 1:
+            return 1
+            
         for i, fixedchar in enumerate(s):
             substring += fixedchar
             count = 1
