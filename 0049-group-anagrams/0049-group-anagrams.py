@@ -4,12 +4,11 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        anagram_map = defaultdict(list)
-        for word in strs:
-            key = ''.join(sorted(word))  
-            anagram_map[key].append(word)
-        return list(anagram_map.values())    
+        anagrams = {}
+        for s in strs:
+            string = ''.join(sorted(s))
+            if string not in anagrams:
+                anagrams[string] = []
+            anagrams[string].append(s)
+        return list(anagrams.values())
 
-
-
-        
