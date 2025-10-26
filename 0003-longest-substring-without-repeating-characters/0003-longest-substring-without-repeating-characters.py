@@ -4,18 +4,22 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        sub = ""
-        length = 0
+        substring = ""
         maxi = 0
-        for char in s:
-            if char not in sub:
-                sub += char
-                length += 1
-            else:
-                if(length > maxi):
-                    maxi = length
-                index = sub.index(char)
-                sub = sub[index + 1:] + char
-                length = len(sub)
-        return max(maxi,length)
+        for i, fixedchar in enumerate(s):
+            substring += fixedchar
+            count = 1
+            for char in s[i+1: len(s)]:
+                if char not in substring:
+                    substring += char
+                    count += 1
+                    maxi = max(maxi, count)
+                else:
+                    maxi = max(maxi, count)
+                    substring = ""
+                    break
 
+        return maxi
+
+
+        
