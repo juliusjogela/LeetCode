@@ -1,17 +1,28 @@
 class Solution(object):
     def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
         st = []
-        for i in range(len(s)):
-            if s[i] == "(" or s[i] == "{" or s[i] == "[":
-                st.append(s[i])
+        pairs = {
+            "(" : ")",
+            "{" : "}",
+            "[" : "]" 
+        }
+        for char in s:
+            if char in pairs:
+                st.append(char)
             else:
-                if st and ((st[-1] == '(' and s[i] == ')') or 
-                            (st[-1] == '{' and s[i] == '}') or
-                            (st[-1] == '[' and s[i] == ']')):
-                            st.pop()
-                else:
+                if not st:
                     return False
-
-
+                popped = st.pop(-1)
+                corresponding = pairs[popped]
+                if char != corresponding:
+                    return False
         return not st
+
+
+
+
         
