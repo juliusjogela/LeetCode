@@ -9,5 +9,6 @@ class Solution(object):
         for i, num in enumerate(nums):
             complement = target - num
             if complement in seen:
-                return [seen[complement], i]
-            seen[num] = i
+                return [i, seen[complement]]
+            else:
+                seen[num] = i
