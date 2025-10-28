@@ -14,11 +14,11 @@ class Solution(object):
             if char in pairs:
                 st.append(char)
             else:
-                if not st:
-                    return False
-                popped = st.pop(-1)
-                corresponding = pairs[popped]
-                if char != corresponding:
+                if st:
+                    popped = st.pop()
+                    if pairs[popped] != char:
+                        return False
+                else:
                     return False
         return not st
 
