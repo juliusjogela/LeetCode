@@ -7,8 +7,7 @@ class Solution(object):
         """
         seen = {}
         for i, num in enumerate(nums):
-            complement = target - num
+            complement = target-num
             if complement in seen:
-                return [i, seen[complement]]
-            else:
-                seen[num] = i
+                return[i, seen[complement]]
+            seen[num] = i
