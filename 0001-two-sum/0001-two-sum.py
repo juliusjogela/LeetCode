@@ -7,7 +7,7 @@ class Solution(object):
         """
         seen = {}
         for i, num in enumerate(nums):
-            complement = target-num
-            if complement in seen:
-                return[i, seen[complement]]
+            comp = target - num
+            if comp in seen:
+                return[i, seen[comp]]
             seen[num] = i
