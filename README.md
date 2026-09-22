@@ -10,6 +10,7 @@ All of my solved LeetCode problems.
 | [0049-group-anagrams](https://github.com/juliusjogela/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/juliusjogela/LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0217-contains-duplicate](https://github.com/juliusjogela/LeetCode/tree/main/0217-contains-duplicate/) | Easy |
+| [0704-binary-search](https://github.com/juliusjogela/LeetCode/tree/main/0704-binary-search/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -46,4 +47,8 @@ All of my solved LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/juliusjogela/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0704-binary-search](https://github.com/juliusjogela/LeetCode/tree/main/0704-binary-search/) | Easy |
 <!---LeetCode Topics End-->
