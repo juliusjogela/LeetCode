@@ -43,6 +43,7 @@ All of my solved LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/juliusjogela/LeetCode/tree/main/0020-valid-parentheses/) | Easy |
+| [0155-min-stack](https://github.com/juliusjogela/LeetCode/tree/main/0155-min-stack/) | Medium |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -51,4 +52,8 @@ All of my solved LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0704-binary-search](https://github.com/juliusjogela/LeetCode/tree/main/0704-binary-search/) | Easy |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0155-min-stack](https://github.com/juliusjogela/LeetCode/tree/main/0155-min-stack/) | Medium |
 <!---LeetCode Topics End-->
