@@ -4,11 +4,10 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        anagrams = {}
+        groups = defaultdict(list)
         for s in strs:
-            string = ''.join(sorted(s))
-            if string not in anagrams:
-                anagrams[string] = []
-            anagrams[string].append(s)
-        return list(anagrams.values())
+            key = ''.join(sorted(s))
+            groups[key].append(s)
 
+        return list(groups.values())
+        
