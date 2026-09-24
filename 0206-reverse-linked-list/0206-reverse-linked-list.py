@@ -9,20 +9,12 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        curr = head
         prev = None
-        while curr is not None:
-            next = curr.next
-            curr.next = prev
-            prev = curr
-            curr = next
-
+        while head != None:
+            next1 = head.next
+            head.next = prev
+            prev = head
+            head = next1
         return prev
-
             
-
-        
-
-
             
-        
