@@ -20,6 +20,7 @@ All of my solved LeetCode problems.
 | [0217-contains-duplicate](https://github.com/juliusjogela/LeetCode/tree/main/0217-contains-duplicate/) | Easy |
 | [0242-valid-anagram](https://github.com/juliusjogela/LeetCode/tree/main/0242-valid-anagram/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/juliusjogela/LeetCode/tree/main/0347-top-k-frequent-elements/) | Medium |
+| [0409-longest-palindrome](https://github.com/juliusjogela/LeetCode/tree/main/0409-longest-palindrome/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -27,6 +28,7 @@ All of my solved LeetCode problems.
 | [0049-group-anagrams](https://github.com/juliusjogela/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0125-valid-palindrome](https://github.com/juliusjogela/LeetCode/tree/main/0125-valid-palindrome/) | Easy |
 | [0242-valid-anagram](https://github.com/juliusjogela/LeetCode/tree/main/0242-valid-anagram/) | Easy |
+| [0409-longest-palindrome](https://github.com/juliusjogela/LeetCode/tree/main/0409-longest-palindrome/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -105,4 +107,8 @@ All of my solved LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/juliusjogela/LeetCode/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0409-longest-palindrome](https://github.com/juliusjogela/LeetCode/tree/main/0409-longest-palindrome/) | Easy |
 <!---LeetCode Topics End-->
