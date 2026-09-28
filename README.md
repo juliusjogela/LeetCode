@@ -7,6 +7,7 @@ All of my solved LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/juliusjogela/LeetCode/tree/main/0001-two-sum/) | Easy |
+| [0011-container-with-most-water](https://github.com/juliusjogela/LeetCode/tree/main/0011-container-with-most-water/) | Medium |
 | [0049-group-anagrams](https://github.com/juliusjogela/LeetCode/tree/main/0049-group-anagrams/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/juliusjogela/LeetCode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0217-contains-duplicate](https://github.com/juliusjogela/LeetCode/tree/main/0217-contains-duplicate/) | Easy |
@@ -39,6 +40,7 @@ All of my solved LeetCode problems.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/juliusjogela/LeetCode/tree/main/0011-container-with-most-water/) | Medium |
 | [0125-valid-palindrome](https://github.com/juliusjogela/LeetCode/tree/main/0125-valid-palindrome/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -110,5 +112,6 @@ All of my solved LeetCode problems.
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/juliusjogela/LeetCode/tree/main/0011-container-with-most-water/) | Medium |
 | [0409-longest-palindrome](https://github.com/juliusjogela/LeetCode/tree/main/0409-longest-palindrome/) | Easy |
 <!---LeetCode Topics End-->
